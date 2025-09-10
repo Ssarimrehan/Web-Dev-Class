@@ -4,25 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarim's First Webpage</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        body{font-family: 'Times New Roman', Times, serif;margin: auto; text-align: center;}
+        header,footer{background-color: black;color:  white;text-align: center;}
+        nav { margin: 15px 0; 
+        
+        }
+        nav a { margin: 0 15px;; color: rgb(255, 255, 255); 
+        text-align: center
+        ;}
+       
+    </style>
 </head>
 
-<body>
+    
+    <body>
 
-    <center>
-        <header>
-            <h1><font color="black">My First Webpage</font></h1>
-            <h3><font color="black">By Sarim Rehan</font></h3>
-        </header>
-    </center>
+    <header>
+        <h1>Muhammad Sarim Rehan Shami</h1>
+            <nav>
+                <a href="#bio">About</a>
+                <a href="#thing">Experience</a>
+                <a href="#skill">Projects</a>
+            </nav>
+    </header>
 
     <br><br>
-    <table align="center" width="80%">
+    <table id="bio">
         <tr>
             <td>
+                <center>
                 <p>
                 Hello! My name is <b>Sarim Rehan</b>. I am an Electrical Engineer with a keen interest 
                 in <b>emerging technologies</b>. Now i am expanding my scope toward Web Development.
-            </p>
+                </p>
+                </center>
             </td>
         </tr>
     </table>
@@ -30,7 +47,7 @@
 
     <br><br>
 
-    <section>
+    <section id="thing">
         <center>
             <h2>My Favorite Things</h2>
             <ul>
@@ -44,15 +61,15 @@
 
     <br><br>
 
-    <section>
+    <section id="skill">
         <center>
             <h2>Skills Showcase</h2>
-            <table border="1" cellpadding="10" cellspacing="0">
+            <table>
                 <tr>
                     <th>Skill</th>
                     <th>Level</th>
                 </tr>
-                <tr>
+       <tr>
                     <td>MATLAB</td>
                     <td>Proficient</td>
                 </tr>
@@ -61,7 +78,7 @@
                     <td>Intermediate</td>
                 </tr>
                 <tr>
-                    <td>Embedded Systems</td>
+          <td>Embedded Systems</td>
                     <td>Intermediate</td>
                 </tr>
                 <tr>
@@ -71,10 +88,17 @@
                 <tr>
                     <td>Data Management</td>
                     <td>Proficient</td>
-                </tr>
+        </tr>
             </table>
         </center>
     </section>
+   <!-- Polaroid Section -->
+        <div class="polaroid-container">
+        <div class="polaroid">
+            <img src="../greenland.jpg" alt="Sample Image">
+            <div class="caption">A Picture of Northern Lights</div>
+        </div>
+        </div>
 
     <br><br>
 
@@ -84,5 +108,6 @@
         </center>
     </footer>
 
-</body>
+    </body>
+</div>
 </html>
